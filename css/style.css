@@ -1,0 +1,133 @@
+.header {
+  margin: 0 0 80px;
+  padding: 31px 62.5px 31px 70.5px;
+  box-shadow: 0 4px 8px 7px rgba(0, 0, 0, 0.2);
+  background-color: #eeeeee;
+}
+.header .middle {
+  display: flex;
+}
+.header .middle .dropdown {
+  display: inline-block;
+}
+.header .middle .dropdown .dropbtn {
+  cursor: pointer;
+  margin: 0 51px 0 0;
+  font-family: BarlowSemiCondensed-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: semi-condensed;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.57px;
+  color: #000000;
+  position: relative;
+}
+.header .middle .dropdown .dropbtn::after {
+  position: absolute;
+  content: '';
+  transition: 0.5s;
+  left: -12px;
+  bottom: -47px;
+  width: 0px;
+  height: 5px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.61);
+  color: rgba(0, 0, 0, 0.61);
+}
+.header .middle .dropdown .dropbtn:hover::after {
+  width: 95px;
+}
+.header .right {
+  text-align: right;
+}
+.header .right span {
+  margin-right: 10px;
+  font-family: BarlowSemiCondensed-SemiBold;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: semi-condensed;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.57px;
+  color: #000000;
+}
+.header .right button {
+  padding: 9px 26.7px 13px 32.2px;
+  border-radius: 6px;
+  border: none;
+  background-color: #252525;
+  font-family: BarlowSemiCondensed-SemiBold;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: semi-condensed;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.43px;
+  color: var(--white);
+}
+
+.center .box {
+  margin-bottom: 20px;
+}
+.center .box .image {
+  position: relative;
+}
+.center .box .image .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.center .box p {
+  margin: 10px 0px 0px 0px;
+  font-family: BarlowSemiCondensed-Regular;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: semi-condensed;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  color: #727272;
+}
+.center .box:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: 0.5s;
+  z-index: 1;
+}
+.center .box:hover p {
+  font-family: BarlowSemiCondensed-Regular;
+  font-size: 21px;
+  font-weight: 600;
+  font-stretch: semi-condensed;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  color: #000000;
+}
+.center:hover .image:not(:hover) {
+  opacity: 0.5;
+}
+
+@font-face {
+  src: url(../fonts/BarlowSemiCondensed-Bold.ttf);
+  font-family: BarlowSemiCondensed-Bold;
+}
+@font-face {
+  src: url(../fonts/BarlowSemiCondensed-Black.ttf);
+  font-family: BarlowSemiCondensed-Black;
+}
+@font-face {
+  src: url(../fonts/BarlowSemiCondensed-Regular.ttf);
+  font-family: BarlowSemiCondensed-Regular;
+}
+@font-face {
+  src: url(../fonts/BarlowSemiCondensed-SemiBold.ttf);
+  font-family: BarlowSemiCondensed-SemiBold;
+}
+
+/*# sourceMappingURL=style.css.map */
